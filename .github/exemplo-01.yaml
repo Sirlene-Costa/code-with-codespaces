@@ -1,0 +1,30 @@
+Exemplo: Agendamento de tarefas
+
+on:
+  schedule:
+    - cron: '0 8-17 * * 1-5'  # Runs every Sunday at midnight UTC
+  
+Exemplo 02: Evento de Push
+
+on:
+  - pull_request
+
+Exemplo 03: Evento de Push e pull Request
+
+on: [
+  push,
+  pull_request
+]
+  
+Exemplo 04: Evento de Push e pull Request em branches específicas
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+Exemplo 05: webhook 
+on:
+  gollum
+    
+  
